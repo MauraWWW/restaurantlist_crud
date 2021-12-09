@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {{!-- include css files --}}
+  <link rel="stylesheet" href="/stylesheet/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" href="/stylesheet/global.css">
+  <title>Restaurant List</title>
+</head>
+
+<body>
+  {{!-- navigation --}}
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+          width="30" height="30" class="d-inline-block align-top" alt="好。吃">
+        我的餐廳清單
+      </a>
+      <a href="/restaurants/new" class="navbar-add fs-6">新增餐廳</a>
+    </div>
+  </nav>
+  
+  <div class="banner"></div>
+
+  <!-- partial templates will replace the part of "body" here -->
+  {{{ body }}}
+
+  {{!-- include js files --}}
+  <script src="/javascript/jquery-3.6.0.min.js"></script>
+  <script src="/javascript/popper.js"></script>
+  <script src="/javascript/bootstrap.js"></script>
+</body>
+
+</html>
